@@ -1,0 +1,40 @@
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.wrapp-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498DB;
+}
+
+.wrapp-menu__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding:  0 0 0 5px;
+}
+
+.wrapp-menu__link {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__link {
+    text-decoration-line: none;
+}
+
+.menu__link-text {
+    color: black
+}
+
+.wrapp-menu__button {
+    padding: 0 20px 0 0;
+}
+
+.menu__button {
+    cursor: pointer;
+}

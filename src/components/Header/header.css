@@ -1,0 +1,58 @@
+.header {
+    margin:  0 0 33px 0 ;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1200px;
+}
+
+.header-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.header-wrapp__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-wrapp__title-text {
+    font-size: 50px;
+    color: #2C3E50;
+}
+
+.header-stiker {
+    width: 450px;
+    height: 420px;
+    margin: 50px 0 0 0;
+
+}
+
+.header-wrapp__button {
+}
+
+.header-wrapp__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-button {
+    padding: 3px 30px;
+    background-color: #E74C3C;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
