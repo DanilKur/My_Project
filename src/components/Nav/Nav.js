@@ -28,7 +28,7 @@ const Nav = () => {
                                 <p className='menu__link-text'>Community</p>
                             </a>
                             <a className='menu__link' href='#'>
-                                <p className='menu__link-text'>Resources</p>
+                                <p className='menu__link-text'>Community</p>
                             </a>
                             <a className='menu__link' href='#'>
                                 <p className='menu__link-text'>Contact</p>
