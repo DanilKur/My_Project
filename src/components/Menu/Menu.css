@@ -48,3 +48,8 @@
 .wrapp {
     margin: 0 0 100px 0;
 }
+
+.wrapp__cart-price-text {
+    font-size: 22px;
+    font-weight: bold;
+}

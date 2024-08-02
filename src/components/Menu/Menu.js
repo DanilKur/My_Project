@@ -2,11 +2,8 @@ import './Menu.css'
 import React, { useContext } from 'react';
 import { ScrollContext } from '../Helper/ScrollContext';
 import Cart from '../Helper/Cart';
-import BasicModal from '../Helper/BasicModal';
-
 
 const Menu = () => {
-
     const { cardsRef } = useContext(ScrollContext);
 
     return (
@@ -16,11 +13,11 @@ const Menu = () => {
                     <div className="wrapp__title">
                         <div className='wrapp__title-text'>Menu</div>
                     </div>
-                    <BasicModal/>
-                    <BasicModal/>
-                    <BasicModal/>
-                    <BasicModal/>
-                    <BasicModal/>
+                    <Cart/>
+                    <Cart/>
+                    <Cart/>
+                    <Cart/>
+                    <Cart/>
                 </div>
             </div>
         </div>
