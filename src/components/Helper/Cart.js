@@ -20,14 +20,12 @@ const Cart = () => {
     };
 
     const handleCloseModal = () => {
-        console.log("Modal is being closed");
         setModalOpen(false);
         setSelectedProduct(null);
     };
 
     const handleAddClick = (e) => {
         e.stopPropagation();
-        console.log("Add button clicked");
     };
 
     return (
