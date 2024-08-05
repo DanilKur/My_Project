@@ -1,45 +1,5 @@
-// import React from 'react';
-// import './ProductModal.css';
-// import CartImage from './../../image/cart.jpg';
-
-// const ProductModal = ({ open, handleClose, product }) => {
-//     if (!open) return null;
-
-//     const stopPropagation = (e) => {
-//         e.stopPropagation();
-//     };
-
-//     return (
-//         <div className="modal" onClick={handleClose}>
-//             <div className="modal-content" onClick={stopPropagation}>
-//                 <span className="close" onClick={handleClose}>&times;</span>
-//                 <div className='wrapp-modal'>
-//                     <div className='wrapp-modal__image'>
-//                         <img className='wrapp-modal__img' src={CartImage} alt='Product'></img>
-//                     </div>
-//                     <div className='wrapp-modal_info'>
-//                         <div className='wrapp-modal_title'>
-//                             Cheesecake
-//                         </div>
-//                         <div className='wrapp-modal_price'>
-//                             $50
-//                         </div>
-//                         <div className='wrapp-modal_text'>
-//                             Body text for whatever you`d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-//                         </div>
-
-//                     </div>
-
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default ProductModal;
-
 import React, { useState } from 'react';
-import './ProductModal.css';
+import '../../style/ProductModal.css';
 import CartImage from './../../image/cart.jpg';
 
 const ProductModal = ({ open, handleClose, product }) => {
@@ -97,6 +57,9 @@ const ProductModal = ({ open, handleClose, product }) => {
 };
 
 export default ProductModal;
+
+
+
 
 
 

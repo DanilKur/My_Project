@@ -40,19 +40,24 @@
 }
 
 .header-wrapp__button {
-}
-
-.header-wrapp__button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header-button {
-    padding: 3px 30px;
+    padding: 10px 30px;
     background-color: #E74C3C;
     border: 0.5px solid #000000;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+}
+
+:hover.header-button {
+    background-color: #c24234;
+}
+
+.header-button__text {
+    font-size: 18px;
 }

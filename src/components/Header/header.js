@@ -23,7 +23,7 @@ const Header = () => {
                         
                         <div className='header-wrapp__button'>
                             <button className='header-button' onClick={scrollToCards}>
-                                Перейти до тістечок
+                                <div className='header-button__text'>Перейти до тістечок</div>
                             </button>
                         </div>
                     </div>

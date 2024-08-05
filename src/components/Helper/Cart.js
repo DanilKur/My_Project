@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CartImage from './../../image/cart.jpg';
 import ProductModal from '../Helper/ProductModal';
 import '../../components/Menu/Menu.css';
@@ -6,10 +6,6 @@ import '../../components/Menu/Menu.css';
 const Cart = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
-
-    useEffect(() => {
-        console.log("modalOpen state:", modalOpen);
-    }, [modalOpen]);
 
     const handleOpenModal = () => {
         setSelectedProduct({
@@ -22,10 +18,6 @@ const Cart = () => {
     const handleCloseModal = () => {
         setModalOpen(false);
         setSelectedProduct(null);
-    };
-
-    const handleAddClick = (e) => {
-        e.stopPropagation();
     };
 
     return (
@@ -46,7 +38,7 @@ const Cart = () => {
                     </div>
                 </div>
                 <div className="wrapp__cart-info-button">
-                    <button className='wrapp__cart-info-button-text' onClick={handleAddClick}>Додати</button>
+                    <button className='wrapp__cart-info-button-text'>Додати</button>
                 </div>
             </div>
             <ProductModal open={modalOpen} handleClose={handleCloseModal} product={selectedProduct} />
@@ -55,6 +47,12 @@ const Cart = () => {
 };
 
 export default Cart;
+
+
+
+
+
+
 
 
 

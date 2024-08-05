@@ -36,5 +36,17 @@
 }
 
 .menu__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     cursor: pointer;
+    background-color: #E74C3C;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+:hover.menu__button {
+    background-color: #c24234;
 }

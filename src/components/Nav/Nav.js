@@ -1,11 +1,25 @@
+import React, { useState } from 'react';
 import './Nav.css'
 import logo from './../../image/Logo1.png'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import OpenModalBasket from '../Helper/OpenModalBasket';
 
 const Nav = () => {
 
-    const card = () => {
-        console.log('card')
+    const [modalBasketOpen, setmodalBasketOpen ] = useState(false)
+    const [selectedBasket, useselectedBasket] = useState(null)
+
+    const handleOpenBasket = () => {
+        useselectedBasket({
+            name: 'Basket'
+        });
+        setmodalBasketOpen(true);
+
+    }
+
+    const handleCloseBasket = () => {
+        setmodalBasketOpen(false)
+        useselectedBasket(null)
     }
 
     return (
@@ -18,29 +32,30 @@ const Nav = () => {
                             </a>
                         </div>
                         <div className='wrapp-menu__link'>
-                            <a className='menu__link' href='#'>
+                            <a className='menu__link' href='selection1'>
                                 <p className='menu__link-text'>Pricing</p>
                             </a>
-                            <a className='menu__link' href='#'>
+                            <a className='menu__link' href='selection1'>
                                 <p className='menu__link-text'>Solu</p>
                             </a>
-                            <a className='menu__link' href='#'>
+                            <a className='menu__link' href='selection1'>
                                 <p className='menu__link-text'>Community</p>
                             </a>
-                            <a className='menu__link' href='#'>
+                            <a className='menu__link' href='selection1'>
                                 <p className='menu__link-text'>Community</p>
                             </a>
-                            <a className='menu__link' href='#'>
+                            <a className='menu__link' href='selection1'>
                                 <p className='menu__link-text'>Contact</p>
                             </a>
                             
                         </div>
                     </div>
-                    <div className='wrapp-menu__button'>
-                        <button className='menu__button'>
+                    <div className='wrapp-menu__button' onClick={handleOpenBasket}>
+                        <button className='menu__button' >
                             <ShoppingBasketIcon/>
-                            <div onClick={card}>Кошик</div> 
+                            <div>Кошик</div> 
                         </button>
+                        <OpenModalBasket openBasket={modalBasketOpen} handleBasketClose={handleCloseBasket} productBasket={selectedBasket}/>
                     </div>
                 </div>
         </div>
