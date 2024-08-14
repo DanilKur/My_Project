@@ -30,6 +30,7 @@ const Menu = () => {
           </div>
           <div onClick={() => handleOpenModal({ id: 1, name: 'Cheesecake', price: 50, image: CartImage })}>
             <Cart />
+            <Cart />
           </div>
         </div>
       </div>
